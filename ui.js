@@ -1,9 +1,23 @@
 $(document).ready(function () {
 
-$('#calculating').hide()
+    $('#calculating').hide();
+    $('#showObjective').hide();
+    $('#exampleContainer').hide();
 
+    $('#showObjective').click(function(){
+    $('#exampleContainer').hide();
+    $('#objective').show();
+    $('#showObjective').hide();
+});
 
+$('#examplesList').hide();
+// menu functionality for examples to show
+$("#showExamples").click(function(){
+    $('#objective').hide();
+    $('#exampleContainer').show();
 
+    $('#showObjective').show();
+});
 
 
 //This is where I am doing all the visualization
