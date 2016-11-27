@@ -1,50 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-  <title>Novoa Project</title>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+    <title>Quadratic Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script src="ui.js" type="text/javascript"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
 <body>
-  <div id="layout">
-      <!-- Menu toggle -->
-      <a href="#menu" id="menuLink" class="menu-link">
-          <!-- Hamburger icon -->
-          <span></span>
-      </a>
+    <!--MENU             -->
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header is-center">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-      <div id="menu">
-          <div class="pure-menu">
-              <a class="pure-menu-heading" href="/">Novoa</a>
+            <a class="pure-menu-heading " href="">Clara Novoa - Quadratic</a>
+        </div>
 
-              <ul class="pure-menu-list">
-                  <li id="exampleNav" class="pure-menu-item"><a href="#" class="pure-menu-link">Examples</a><p id="arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i>
-                              <i class="fa fa-chevron-down" aria-hidden="true"></i><i class="fa fa-chevron-down" aria-hidden="true"></i></p></li>
-                  <li class="pure-menu-item">
-                    <ul id="exExtended" class="pure-menu-list">
-                      <li class="pure-menu-item"> <a class="pure-menu-link" href="/examples/student-center/">Student Center</a></li>
-                      <li class="pure-menu-item"><a class="pure-menu-link" href="/examples/biology-building/">Hospital</a></li>
-                      <li class="pure-menu-item"> <a class="pure-menu-link" href="/examples/gym/">Recreation Center</a></li>
-                      <li class="pure-menu-item"> <a class="pure-menu-link" href="/examples/engineering-building/">Engneer. Building</a></li>
-                    </ul>
-                  </li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-              </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Examples</a></li>
+            <li><a href="">Contact Me</a></li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+</nav>
+    
+<div class = "content-wrapper">
+        
+    <div class="header">
+      <h1>Quadratic Assignment Problem</h1>
+      <h2>Abigail Barron</h2>
+    </div>
+
+    <div class="content">
+      <div id="objective">
+          <h2 class="content-subhead">Objective</h2>
+          <p>In the Quadratic Assignment Problem (QAP), n units (usually departments, machines, or electronic components) must be assigned to n locations given the distance between the locations and the flow between the units. The goal is to find the assignment that minimizes the sum of the products of distance traveled and flow between the units.</p>
+          <h2 class="content-subhead">Diagrams describing how it works</h2>
+            <p >In the QAP n units(facilities, departments, machines, or electronic components) must be assigned to n locations give the matrixes of flow..</p>
+
+          <div class="pure-g">
+              <div class="pure-u-1-2">
+                  <img class="pure-img-responsive" src="/static/facilities.png" alt="n-facilities">
+              </div>
+              <div class="pure-u-1-2">
+                  <img class="pure-img-responsive" src="/static/locations.png" alt="n locations">
+              </div>
+              <div class="pure-u-2-3">
+                  <img class="pure-img-responsive" src="/static/result.png" alt="result">
+              </div>
           </div>
+
+          <h2 class="content-subhead">Mathematical Formulation</h2>
+
+        </div>
+
+        <div id="exampleSection">
+          <h2 class="content-subhead">Examples</h2>
+          <p>See the quadratic assignment in the following examples: </p>
+          <ul>
+             <li> <a href="/examples/student-center/">Student Center</a></li>
+              <li><a href="/examples/hospital/">Hospital</a></li>
+             <li> <a href="/examples/gym/">Gym</a></li>
+             <li> <a href="/examples/engineering-building/">Engineering Building</a></li>
+          </ul>
+          <button id="showObjective" class="pure-button pure-button-primary">Go Back</button>
+        </div>
       </div>
-
-  </div>
-<script>var url="{{ request.path }}"</script>
-<script src="/static/js/ui.js"></script>
-<script type="text/javascript" src="/static/js/example-ui.js"></script>
-
-
-
+</div>
+    
+    
+    
 </body>
-</html>
