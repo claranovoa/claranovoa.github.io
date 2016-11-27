@@ -1,37 +1,9 @@
 $(document).ready(function () {
-$('#showObjective').hide();
+    alert("hi");
 $('#calculating').hide()
-    $('#exExtended').hide()
 
-    if(url =='/'){
-        $('#arrow').hide();
-    }
-    else{
-        $('#arrow').show();
-    }
 
-$('#arrowUp').click(function(){
-    $('#exExtended').hide();
-});
 
-$('#exampleNav').click(function(){
-    if(url=='/'){
-        $('#objective').hide();
-        $('#showObjective').show();
-          $('#arrow').hide()
-    }
-    else{
-        $('#exampleNav').replaceWith('<a href="#" class="pure-menu-link">Examples</a><p id="arrowUp"><i class="fa fa-chevron-up" aria-hidden="true"></i> ' +
-            '<i class="fa fa-chevron-up" aria-hidden="true"></i><i class="fa fa-chevron-up" aria-hidden="true"></i></p>');
-         $('#exExtended').show();
-
-    }
-});
-
-$('#showObjective').click(function(){
-    $('#objective').show();
-    $('#showObjective').hide();
-});
 
 
 //This is where I am doing all the visualization
